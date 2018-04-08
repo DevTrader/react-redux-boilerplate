@@ -1,0 +1,2 @@
+export const BUMP_LIST_ITEM_UP = "BUMP_LIST_ITEM_UP";
+export const BUMP_LIST_ITEM_DOWN = "BUMP_LIST_ITEM_DOWN";
