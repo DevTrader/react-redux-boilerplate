@@ -1,3 +1,5 @@
+# WIP - Work In Progress. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 # React/Redux Template + List reorder
