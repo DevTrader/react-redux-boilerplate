@@ -24,18 +24,21 @@ class App extends Component {
     }
   }
 
+  //This Object will be accessed by the <List />---------------------
   swap = {
     upHandler: (e) => {
       console.log('CLICK');
-     // console.log(e.target.parentElement.dataset.index);
+     //Getting the index of the list item through the html "data-" prefix and targeting it with the ".dataset" javascript selector, the event targets the button, parentElement targets the list tag.
       const elementIndex = e.target.parentElement.dataset.index;
       let listArrState = [...this.state.listArr];
+      //If it isn't the first list item, run the swap method declared through Array.prototype on line 5.
       if (elementIndex > 0) {
         listArrState.swap(elementIndex, elementIndex - 1);
       }
       console.log(listArrState);
       this.setState({listArr: [...listArrState]});
     },
+    //Same as above, but it swaps the list item down one.
     downHandler: (e) => {
       console.log('CLICK');
       // console.log(e.target.parentElement.dataset.index);
