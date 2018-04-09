@@ -1,4 +1,4 @@
-# WIP - Work In Progress. 
+# &#x1F534; WIP - Work In Progress. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
