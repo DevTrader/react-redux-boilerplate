@@ -44,8 +44,10 @@ class App extends Component {
       // console.log(e.target.parentElement.dataset.index);
        const elementIndex = e.target.parentElement.dataset.index;
        let listArrState = [...this.state.listArr];
-       if (elementIndex < this.state.listArr.length) {
+       if (elementIndex < this.state.listArr.length - 1) {
          listArrState.swap(elementIndex, Number(elementIndex) + 1);
+       }else{
+         return;
        }
        console.log(listArrState);
        this.setState({listArr: [...listArrState]});
