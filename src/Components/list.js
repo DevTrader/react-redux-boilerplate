@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 
 const List = (props) => {
     return (
-        <li>{props.listItem} <button>Up</button> <button>Down</button></li>
+        <li data-index = {props.index}>{props.listItem} <button onClick = {props.swap.upHandler}>Up</button> <button onClick = {props.swap.downHandler}>Down</button></li>
     );
 }
 
