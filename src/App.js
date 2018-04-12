@@ -48,12 +48,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <ul className="List">
-          { this.state.listArr.map((item, index) => {
-              return(<List listItem = {item} key = {index} />);
-            })
-          }
-        </ul>
+        <List listItems = {this.state.listArr} />
         <h1 style={this.state.bgColor}>{this.state.text}</h1>
         <input style={this.formStyle}  type='text' id='textForm' onChange = {this.formHandler} placeholder='Type here'></input>
         <button style={this.formStyle} onClick = {this.textBgHandler}>Change Text Background Color</button>
